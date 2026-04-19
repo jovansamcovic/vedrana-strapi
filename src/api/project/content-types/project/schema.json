@@ -23,6 +23,15 @@
         }
       }
     },
+    "slug": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "unique": true
+    },
     "description": {
       "type": "blocks",
       "pluginOptions": {
@@ -106,15 +115,6 @@
         "videos",
         "audios"
       ]
-    },
-    "slug": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "unique": true
     }
   }
 }
