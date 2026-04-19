@@ -24,13 +24,13 @@
       }
     },
     "slug": {
-      "type": "string",
+      "type": "uid",
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       },
-      "unique": true
+      "targetField": "title"
     },
     "description": {
       "type": "blocks",

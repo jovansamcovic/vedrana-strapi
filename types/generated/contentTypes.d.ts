@@ -544,11 +544,10 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
       'api::project.project'
     >;
     publishedAt: Schema.Attribute.DateTime;
-    slug: Schema.Attribute.String &
-      Schema.Attribute.Unique &
+    slug: Schema.Attribute.UID<'title'> &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
-          localized: false;
+          localized: true;
         };
       }>;
     title: Schema.Attribute.String &
